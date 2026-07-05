@@ -1,9 +1,5 @@
 <?php
-/**
- * "Modèle" Commande :
- * ['id' => int, 'client_id' => int, 'lignes' => [['plat_id'=>int,'quantite'=>int], ...],
- *  'montant_total' => float, 'statut' => string, 'livreur_id' => int|null]
- */
+
 
 function creerCommande(int $id, int $clientId, array $lignes, float $montantTotal): array
 {
@@ -17,7 +13,7 @@ function creerCommande(int $id, int $clientId, array $lignes, float $montantTota
     ];
 }
 
-/** RG3 du scénario 1 : calcule le montant total à partir des lignes et du catalogue de plats. */
+
 function calculerMontantTotal(array $lignes, array $plats): float
 {
     $total = 0.0;
