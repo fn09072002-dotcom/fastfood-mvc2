@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . "/../model/plat.model.php";
 
 
 session_start();
