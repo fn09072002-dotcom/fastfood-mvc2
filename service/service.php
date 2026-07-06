@@ -63,3 +63,9 @@ function enregistrerCommande(array $commande): void
     $data = &db();
     $data['commandes'][$commande['id']] = $commande;
 }
+
+/** Système de Notification — utilisé par les scenarios 3 et 4. */
+function notifier(string $destinataire, string $message): void
+{
+    echo "[NOTIFICATION -> {$destinataire}] {$message}" . PHP_EOL;
+}
