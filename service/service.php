@@ -11,7 +11,7 @@ function &db(): array
             'clients' => [],
             'commandes' => [],
             'livreurs' => [],
-            'compteurs' => ['plat' => 0, 'client' => 0, 'commande' => 0, 'livreur' => 0],
+            'compteurs' => ['plat' => 0, 'client' => 0, 'commande' => 0, 'livreur' => 0, 'paiement' => 0],
         ];
     }
     return $_SESSION['db'];
