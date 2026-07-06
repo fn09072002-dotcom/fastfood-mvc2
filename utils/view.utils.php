@@ -1,6 +1,11 @@
 <?php
+
 function render(string $vue, array $donnees = []): void
 {
-    extract($donnees);
-    require __DIR__ . "/../view/" . $vue;
+    $mode = $donnees['mode'];
+    if ($vue === "client.view.php") {
+        afficherVueClient($mode, $donnees);
+    } elseif ($vue === "gerant.view.php") {
+        afficherVueGerant($mode, $donnees);
+    }
 }
