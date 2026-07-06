@@ -7,6 +7,7 @@ require_once __DIR__ . "/../model/paiement.model.php";
 require_once __DIR__ . "/../service/service.php";
 require_once __DIR__ . "/../utils/validator.php";
 require_once __DIR__ . "/../utils/view.utils.php";
+require_once __DIR__ . "/../view/client.view.php";
 
 function afficherMenu(): void
 {

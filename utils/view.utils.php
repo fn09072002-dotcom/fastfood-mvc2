@@ -1,8 +1,5 @@
 <?php
-/**
- * En mode console, "render" appelle simplement la fonction d'affichage
- * correspondante au lieu d'inclure un template HTML.
- */
+
 function render(string $vue, array $donnees = []): void
 {
     $mode = $donnees['mode'];
