@@ -23,3 +23,9 @@ function calculerMontantTotal(array $lignes, array $plats): float
     }
     return $total;
 }
+
+
+function changerStatutCommande(array &$commande, string $nouveauStatut): void
+{
+    $commande['statut'] = $nouveauStatut;
+}
