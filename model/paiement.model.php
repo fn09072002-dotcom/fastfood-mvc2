@@ -1,6 +1,5 @@
 <?php
 
- 
 
 function creerPaiement(int $id, int $commandeId, float $montant): array
 {
