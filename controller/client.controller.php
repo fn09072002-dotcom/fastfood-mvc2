@@ -48,7 +48,7 @@ function payerCommandeAction(): void
     if (!$commande) erreur('COMMANDE_INTROUVABLE');
     if ($commande['statut'] !== 'En attente') erreur('STATUT_INVALIDE');
 
-    /
+    
     $infosCarte = ['numero' => $_POST["numero_carte"], 'cvv' => $_POST["cvv"]];
     $transactionValidee = validerTransactionBancaire($infosCarte);
 
